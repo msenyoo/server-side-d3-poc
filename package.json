@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cross-env": "^7.0.3",
     "csv": "^1.1.1",
     "csv-parse": "^1.2.3",
     "csvtojson": "^1.1.7",
@@ -24,6 +25,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start:server": "NODE_ENV=development node server/index.js"
+    "start:server": "cross-env NODE_ENV=development node server/index.js"
   }
 }
